@@ -13,19 +13,37 @@
 
 // Your code goes here...
 
+function getDiffTwentySeven(num) {
+  if (num <= 27) {
+    return 27 - num;
+  } else {
+    return (num - 27) * 2;
+  }
+
+  getDiffTwentySeven(13);
+  getDiffTwentySeven(37);
+}
 
 
 
 /** =========================
  * Create a sumOfTwoIntegers(num1, num2) function to compute and return the sum of the two given integers
- * If the two argumants are same, then returns triple their sum.
+ * If the two arguments are same, then returns triple their sum.
  * Example1: sumOfTwoIntegers(13, 14) => 27
  * Example2: sumOfTwoIntegers(12, 12) => 72
  */
 
 // Your code goes here
 
+const sumOfTwoIntegers = function (num1, num2) {
+  if (num1 === num2) {
+    return (num1 + num2);
+  }
+  return (num1 + num2) * 3;
 
+  sumOfTwoIntegers(13, 14);
+  sumOfTwoIntegers(12, 12);
+}
 
 
 /** =========================
@@ -39,7 +57,16 @@
 
 // Your code goes here...
 
+const isOneOfThemOrTheirSumIsForty = (num1, num2) => {
+  if (num1 === 40 || num2 === 40 || (num1 + num2) === 40) {
+    return true;
+  }
+  return false;
 
+  isOneOfThemOrTheirSumIsForty(40, 13);
+  isOneOfThemOrTheirSumIsForty(22, 18);
+  isOneOfThemOrTheirSumIsForty(23, 16);
+}
 
 
 // === TEST YOURSELF ===
